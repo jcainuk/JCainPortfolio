@@ -34,7 +34,7 @@ footer {
   padding: 80px;
 }
 
-nav {
+footer nav {
   display: flex;
   justify-content: space-between;
 }
@@ -165,6 +165,11 @@ p {
   grid-auto-rows: minmax(auto, auto);
   justify-items: center;
   margin: auto;
+}
+
+#my-email {
+  padding: 0;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
