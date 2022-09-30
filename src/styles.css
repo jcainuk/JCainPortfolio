@@ -56,17 +56,17 @@ li {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 p {
-  margin: 0;
-  font-size: 30px;
+  margin: 20px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -147,9 +147,8 @@ p {
 
 .project-card {
   width: 80%;
-  height: 650px;
+  height: 600px;
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
-  margin: 10px;
 }
 
 .project-container {
@@ -182,7 +181,7 @@ p {
   width: 80%;
   border-radius: 10px;
   object-fit: cover;
-  height: 50%;
+  height: 30%;
 }
 
 hr {
