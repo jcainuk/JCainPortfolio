@@ -34,7 +34,7 @@ footer {
   padding: 80px;
 }
 
-footer nav {
+nav {
   display: flex;
   justify-content: space-between;
 }
@@ -67,7 +67,7 @@ h2 {
 
 p {
   padding: 20px;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -170,6 +170,7 @@ p {
 #my-email {
   padding: 0;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 1000px) {
