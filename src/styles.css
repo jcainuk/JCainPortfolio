@@ -56,24 +56,23 @@ li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 50px;
 }
 
 p {
-  margin: 20px;
-  font-size: 1.5rem;
+  margin: 0;
+  font-size: 30px;
   font-weight: 300;
 }
 
 .subtext {
   font-size: 15px;
   font-weight: 300;
-  padding: 1rem;
 }
 
 .hero-area {
@@ -147,32 +146,20 @@ p {
 
 .project-card {
   width: 80%;
-  height: 600px;
+  height: 500px;
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
 }
 
 .project-container {
-  /* display: flex;
-  justify-content: space-around; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  display: flex;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 1000px) {
-  .headshot {
-    margin: auto;
-  }
   .project-container {
-    /* display: flex;
-    flex-wrap: wrap; */
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .project-card {
-    margin: auto;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
