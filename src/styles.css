@@ -29,8 +29,8 @@ section {
 }
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
   padding: 80px;
 }
@@ -80,7 +80,6 @@ p {
 
 .hero-area {
   display: flex;
-  height: 100%;
   justify-content: space-between;
   align-items: center;
 }
