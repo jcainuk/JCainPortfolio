@@ -58,6 +58,7 @@ Global Styles
   box-sizing: border-box;
 }
 body {
+  max-width: 100%;
   font-family: var(--ff-primary);
   background: var(--clr-white);
   color: var(--clr-grey-1);
@@ -85,7 +86,7 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 3rem;
@@ -179,6 +180,7 @@ Navbar
 ===============
 */
 .navbar {
+  max-width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -283,7 +285,7 @@ Navbar
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--clr-grey-5);
-    font-size: 1.2;
+    font-size: 2rem;
     transition: var(--transition);
   }
   .nav-icon:hover {
