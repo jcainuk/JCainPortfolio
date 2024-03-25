@@ -91,7 +91,7 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 h4 {
   font-size: 0.875rem;
@@ -350,6 +350,13 @@ About
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
+
+.about-img {
+  border: 0.25rem solid var(--clr-primary-5);
+  border-radius: var(--radius);
+  max-width: 15rem;
+  margin: 0 auto;
+}
 .about-img,
 .about-info {
   margin-bottom: 2rem;
@@ -362,7 +369,7 @@ About
   .about-center {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .about-img,
   .about-info {
@@ -370,27 +377,9 @@ About
     margin-bottom: 0;
     align-self: center;
   }
-}
 
-@media screen and (min-width: 1170px) {
-  .about-img::before {
-    content: "";
-    position: absolute;
-    border: 0.5rem solid var(--clr-primary-5);
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    top: -1.5rem;
-    left: -1.5rem;
-  }
   .about-img {
-    position: relative;
-    display: block;
-  }
-  .about-photo {
-    /* position: relative; */
-    background-size: cover;
-    max-width: 5rem;
+    margin: 0;
   }
 }
 
