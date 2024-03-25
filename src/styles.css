@@ -444,17 +444,6 @@ Projects
   object-fit: cover;
 }
 
-.project-date {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background: var(--clr-primary-8);
-  margin-bottom: 0;
-  color: var(--clr-primary-1);
-  text-transform: capitalize;
-  padding: 0.25rem 0.5rem;
-}
-
 .project-info {
   padding: 1.25rem 1.5rem;
 }
