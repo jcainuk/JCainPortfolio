@@ -1,211 +1,416 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonathan Cain Portfolio</title>
-    <link rel="stylesheet" href="./src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font awesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/e3985d25fc.js"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
-    ></script>
-    <script src="./src/app.js" defer></script>
+      referrerpolicy="no-referrer"
+    />
+    <!-- css styles -->
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <title>Jonathan Cain || Junior Developer</title>
   </head>
   <body>
-    <section class="hero">
-      <nav>
-        <span class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 24 24"
-            fill="#ffffff"
-          >
-            <path
-              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 16l-6-2.935v-2.131l6-2.934v2.199l-3.64 1.801 3.64 1.796v2.204zm2-8v2.199l3.64 1.801-3.64 1.796v2.204l6-2.935v-2.131l-6-2.934z"
-            />
-          </svg>
-        </span>
-        <ul id="nav-list">
-          <li><a href="#about-me" class="nav-link">About me</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact-me" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
+    <!-- header  -->
+    <header id="home">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <h2 class="nav-logo">Jonathan <span>Cain</span></h2>
+
+            <button type="button" class="nav-toggle" id="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- end of nav header -->
+          <!-- nav links -->
+          <ul class="nav-links" id="nav-links">
+            <!-- single link -->
+            <li>
+              <a href="#home" class="nav-link scroll-link">home</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="#about" class="nav-link scroll-link">about</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="#skills" class="nav-link scroll-link">skills</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="#projects" class="nav-link scroll-link">projects</a>
+            </li>
+            <!-- end of single link -->
+          </ul>
+          <!-- end of nav links -->
+          <!-- nav icons -->
+          <ul class="nav-icons">
+            <!-- single icon -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jcain-dev/"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <!-- end of single icon -->
+            <!-- single icon -->
+            <li>
+              <a
+                href="https://github.com/jcainuk"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <!-- end of single icon -->
+            <!-- single icon -->
+            <li>
+              <a
+                href="mailto:jcainuk@gmail.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-envelope"></i>
+              </a>
+            </li>
+            <!-- end of single icon -->
+          </ul>
+          <!-- end of nav icons -->
+        </div>
       </nav>
-      <div class="hero-area">
-        <div class="hero-text">
+      <!-- hero -->
+      <div class="hero">
+        <div class="hero-banner">
           <h1>Jonathan Cain</h1>
-          <p>Software Developer</p>
+          <p>Junior Developer</p>
+          <a href="#projects" class="btn hero-btn scroll-link"
+            >explore my projects</a
+          >
         </div>
       </div>
-    </section>
-      <h2>About Me</h2>
-    <section class="sub-section" id="about-me">
-    
-      <div class="information">
-        
-        <p>
-          Hello. My name is Jonathan Cain. I am a graduate from the July 2023
-          cohort of
-          <a
-            href="https://northcoders.com/"
-         
-            target="_blank"
-            >Northcoders</a
-          >, a 13 week full-time software engineering bootcamp.
-        </p>
-        <p>
-          Leveraging my background as a former English as a foreign language
-          teacher, I bring strong communication skills to collaborative
-          settings. I have hands-on experience with
-          <strong>Test-Driven Development</strong>,
-          <strong>Pair-Programming</strong>, <strong>OOP</strong>,
-          <strong>JavaScript</strong>, <strong>React</strong>,
-          <strong>Node.js</strong>, <strong>Express</strong>,
-          <strong>HTML</strong>, <strong>CSS</strong>,
-          <strong>PostgreSQL</strong> and <strong>MongoDB</strong>. I'm
-          committed to maintaining high coding standards. I approach
-          problem-solving with diligence and am eager to contribute my growing
-          technical expertise to meaningful projects. With a genuine passion for
-          coding, I'm dedicated to lifelong learning and making valuable
-          contributions within a team.
-        </p>
-
-        <p>
-          I have years of experience of standing up and presenting in front of
-          diverse groups of students so I'm good at breaking down difficult
-          concepts into clear and simple language. Collaborating and working as
-          a team is something I really enjoy. When I'm not coding I enjoy
-          <a
-       
-            href="https://www.youtube.com/channel/UCkcaOuup5hP51C5lum1sx1w"
-            target="_blank"
-            >yoga</a
-          >, reading, gaming and sightseeing.
-        </p>
+    </header>
+    <!-- end of header  -->
+    <!-- about section -->
+    <section class="section" id="about">
+      <!-- title -->
+      <div class="section-title">
+        <h2>about <span>me</span></h2>
       </div>
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src="./src/images/20231002_145051.jpg"
-          alt="Jonathan Cain profile photo"
-        />
-      </div>
-
-    </div>
-    </section>
-    <section class="sub-section-alternative" id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-     
-        <div class="project-card">
-             <h3>Picture-This-Place (Group Project)</h3>
+      <!-- end of title -->
+      <div class="section-center about-center">
+        <!-- about img wrapper -->
+        <article class="about-img">
           <img
-            class="project-image"
-            src="./src/images/Screenshot 2023-10-02 at 23.38.47.png"
-            alt=""
+            src="./images/20231002_145051.jpg"
+            class="about-photo"
+            alt="photo of Jonathan"
           />
-          
-          <p class="subtext">
-            A mobile app that encourages local exploration, social engagement,
-            and gameplay by allowing users to submit photos of places, and
-            others must guess the location in the photo by walking to that place
-            an submitting their phone coordinates.
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+          <h3>From Teaching to Software Engineering</h3>
+          <p>
+            Hello. My name is Jonathan Cain. I am a graduate from the July 2023
+            cohort of
+            <a href="https://northcoders.com/" target="_blank">Northcoders</a>,
+            a 13 week full-time software engineering bootcamp. Leveraging my
+            background as a former English as a foreign language teacher, I
+            bring strong communication skills to collaborative settings.
           </p>
-          <hr />
-          <div class="button">
-            <a
-              class="project-link"
-              href="https://github.com/jcainuk/group-5-backend"
-              target="_blank"
-              >Backend</a
-            >
-          </div>
-          <div class="button">
-            <a
-              class="project-link"
-              href="https://github.com/Harrywg/group-5-frontend"
-              target="_blank"
-              >Frontend</a
-            >
-          </div>
-          <div class="button">
-            <a
-              class="project-link"
-              href="https://www.youtube.com/watch?v=CL6b3KgObPg"
-              target="_blank"
-              >Demo</a
-            >
-          </div>
-        </div>
-        <div class="project-card">
-          <h3>NC News (Solo Project)</h3>
-          <img
-            class="project-image"
-            src="./src/images/screenshot1.png"
-            alt=""
-          />
-          
-          <p class="subtext">
-            The intention of this full-stack project is to mimic the building of
-            a real world news service (such as Reddit) which should provide
-            information to the front-end architecture via an API. It was built using React on the frontend and PostgreSQL.
+          <p>
+            I'm committed to maintaining high coding standards. I approach
+            problem-solving with diligence and am eager to contribute my growing
+            technical expertise to meaningful projects. With a genuine passion
+            for coding, I'm dedicated to lifelong learning and making valuable
+            contributions within a team. When I'm not coding I enjoy yoga,
+            reading, gaming and sightseeing.
           </p>
-          <hr />
-          <div class="button">
-            <a
-              class="project-link"
-              href="https://github.com/jcainuk/be-nc-news"
-              target="_blank"
-              >Backend</a
-            >
-          </div>
-       <div class="button">
-            <a
-              class="project-link"
-              href="https://github.com/jcainuk/fe-nc-news"
-              target="_blank"
-              >Frontend</a
-            >
-       </div>
-          <div class="button">
-            <a
-              class="project-link"
-              href="https://jcainuk-news.netlify.app/"
-              target="_blank"
-              >Demo</a
-            >
-          </div>
-        </div>
+        </article>
       </div>
     </section>
-    <footer id="contact-me">
-      <h2>Contact Me</h2>
-
-      <div class="socials">
-        <a href="mailto:jcainuk@gmail.com">
-          <img src="./src/images/Email-Light.png" alt="email icon" />
-        </a>
-        <a href="https://github.com/jcainuk" target="_blank">
-          <img src="./src/images/GitHub-Light.png" alt="GitHub icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/jcain-dev/" target="_blank">
-          <img src="./src//images/LinkedIn-Light.png" alt="" />
-        </a>
+    <!-- end of about section -->
+    <!-- skills -->
+    <section class="section skills" id="skills">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>my <span>skills</span></h2>
       </div>
+      <!-- end of section title -->
+      <div class="section-center skills-center">
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-brands fa-html5"></i>
+          </span>
+          <p>HTML5</p>
+        </article>
+        <!-- end of service -->
+
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </span>
+          <p>CSS3</p>
+        </article>
+        <!-- end of service -->
+
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-brands fa-js"></i>
+          </span>
+          <p>JavaScript</p>
+        </article>
+        <!-- end of service -->
+
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-brands fa-react"></i>
+          </span>
+          <p>Reactjs</p>
+        </article>
+        <!-- end of service -->
+
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-brands fa-node"></i>
+          </span>
+          <p>Nodejs</p>
+        </article>
+        <!-- end of service -->
+
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-solid fa-database"></i>
+          </span>
+          <p>MySQL & MongoDB</p>
+        </article>
+        <!-- end of service -->
+
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-brands fa-php"></i>
+          </span>
+          <p>PHP</p>
+        </article>
+        <!-- end of service -->
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-solid fa-people-arrows"></i>
+          </span>
+          <p>Pair Programming</p>
+        </article>
+        <!-- end of service -->
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon">
+            <i class="fa-solid fa-microscope"></i>
+          </span>
+          <p>TDD</p>
+        </article>
+        <!-- end of service -->
+      </div>
+    </section>
+    <!--end skills -->
+    <!-- projects -->
+    <section class="section" id="projects">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>featured <span>projects</span></h2>
+      </div>
+      <!-- end of section title -->
+      <!-- projects center -->
+      <div class="section-center projects-center">
+        <!-- single project -->
+        <article class="project-card">
+          <div class="project-img-container">
+            <img src="./images/tour-1.jpg" class="project-img" alt="" />
+            <p class="project-date">august 26th, 2024</p>
+          </div>
+          <!-- project -->
+          <div class="project-info">
+            <h4>test</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus dolorem labore vel exercitationem repellendus dolore
+              ipsam iusto perferendis sed illum.
+            </p>
+            <div class="project-footer">
+              <p>
+                <span> <i class="fas fa-map"> </i> malta </span>
+              </p>
+              <p>6 days</p>
+              <p>from £600</p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="project-card">
+          <div class="project-img-container">
+            <img src="./images/tour-2.jpg" class="project-img" alt="" />
+            <p class="project-date">may 5th, 2024</p>
+          </div>
+          <!-- project info -->
+          <div class="project-info">
+            <h4>turkey adventure</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus dolorem labore vel exercitationem repellendus dolore
+              ipsam iusto perferendis sed illum.
+            </p>
+            <div class="project-footer">
+              <p>
+                <span> <i class="fas fa-map"> </i> side, turkey</span>
+              </p>
+              <p>7 days</p>
+              <p>from £500</p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="project-card">
+          <div class="project-img-container">
+            <img src="./images/tour-3.jpg" class="project-img" alt="" />
+            <p class="project-date">september 10th, 2024</p>
+          </div>
+          <!-- project info -->
+          <div class="project-info">
+            <h4>ibiza adventure</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus dolorem labore vel exercitationem repellendus dolore
+              ipsam iusto perferendis sed illum.
+            </p>
+            <div class="project-footer">
+              <p>
+                <span> <i class="fas fa-map"> </i> ibiza </span>
+              </p>
+              <p>10 days</p>
+              <p>from £1000</p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single project -->
+        <!-- single project -->
+        <article class="project-card">
+          <div class="project-img-container">
+            <img src="./images/tour-4.jpg" class="project-img" alt="" />
+            <p class="project-date">october 1st, 2024</p>
+          </div>
+          <!-- project info -->
+          <div class="project-info">
+            <h4>india adventure</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus dolorem labore vel exercitationem repellendus dolore
+              ipsam iusto perferendis sed illum.
+            </p>
+            <div class="project-footer">
+              <p>
+                <span> <i class="fas fa-map"> </i> goa, india </span>
+              </p>
+              <p>12 days</p>
+              <p>from £1200</p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single project -->
+      </div>
+    </section>
+    <!-- end of projects -->
+
+    <!-- footer -->
+    <footer class="section footer">
+      <!-- footer links -->
+      <ul class="footer-links">
+        <!-- single link -->
+        <li><a href="#home" class="footer-link scroll-link">home</a></li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li><a href="#about" class="footer-link scroll-link">about</a></li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="#skills" class="footer-link scroll-link">skills</a>
+        </li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="#projects" class="footer-link scroll-link">projects</a>
+        </li>
+        <!-- end of single link -->
+      </ul>
+      <!-- end of footer links -->
+      <!-- footer icons -->
+      <ul class="footer-icons">
+        <!-- single icon -->
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jcain-dev/"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- single icon -->
+        <li>
+          <a
+            href="https://github.com/jcainuk"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <!-- end of single icon -->
+        <!-- single icon -->
+        <li>
+          <a
+            href="mailto:jcainuk@gmail.com"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-envelope"></i>
+          </a>
+        </li>
+        <!-- end of single icon -->
+      </ul>
+      <!-- end of footer icons -->
+      <p class="copyright">
+        copyright &copy; Jonathan Cain <span id="date"></span>, all rights
+        reserved
+      </p>
     </footer>
+
+    <!-- end of footer -->
+
+    <!-- scripts -->
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
