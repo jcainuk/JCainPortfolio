@@ -200,7 +200,6 @@ Navbar
 .nav-center {
   width: 100%;
   max-width: 1170px;
-  /* margin: 0 auto; */
 }
 .nav-header {
   display: flex;
@@ -366,6 +365,18 @@ Content Divider
     rgb(97, 55, 155),
     rgb(147, 40, 142)
   );
+
+  animation: animateGradient 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  background-size: 200% auto;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /*
