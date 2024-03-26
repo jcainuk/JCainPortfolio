@@ -402,6 +402,7 @@ Skills
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-between;
+  max-width: 80%;
 }
 
 .service {
