@@ -427,17 +427,26 @@ Projects
   display: flex;
   flex-direction: column;
 }
-.project-body {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 2rem;
-}
-.project-img-container {
-  width: 35%;
+.project-card h4,
+.section-subtitle {
+  text-align: center;
+  color: var(--clr-primary-5);
+  font-size: 1.5rem;
 }
 
-.project-info {
-  max-width: 60%;
+@media screen and (min-width: 768px) {
+  .project-body {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+  .project-img-container {
+    width: 35%;
+  }
+
+  .project-info {
+    max-width: 60%;
+  }
 }
 
 .project-card {
@@ -474,10 +483,6 @@ Projects
   color: var(--clr-primary-5);
   font-size: 1rem;
   padding: 1rem;
-}
-
-.project-btn {
-  text-align: center;
 }
 
 .footer-icon-container {
