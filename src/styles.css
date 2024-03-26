@@ -430,13 +430,14 @@ Projects
 .project-body {
   display: flex;
   flex-direction: row;
+  padding-bottom: 2rem;
 }
 .project-img-container {
   width: 35%;
 }
 
 .project-info {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .project-card {
@@ -463,7 +464,7 @@ Projects
 
 .project-footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -476,6 +477,10 @@ Projects
 }
 
 .project-btn {
+  text-align: center;
+}
+
+.footer-icon-container {
   text-align: center;
 }
 
