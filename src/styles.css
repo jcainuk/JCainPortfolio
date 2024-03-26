@@ -283,8 +283,8 @@ Navbar
     display: flex;
   }
   .nav-icon {
+    color: var(--clr-primary-5);
     margin-right: 0.7rem;
-    color: var(--clr-grey-5);
     font-size: 2rem;
     transition: var(--transition);
   }
