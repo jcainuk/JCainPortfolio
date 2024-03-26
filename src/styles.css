@@ -489,6 +489,10 @@ Projects
   text-align: center;
 }
 
+.project-card-highlight {
+  color: var(--clr-primary-5);
+}
+
 /*
 =============== 
 Footer
