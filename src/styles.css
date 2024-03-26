@@ -310,7 +310,7 @@ Hero
 }
 
 .hero-banner h1 {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .hero-banner p {
@@ -341,7 +341,34 @@ Hero
   .hero-banner p {
     max-width: 40rem;
   }
-} /*
+}
+/*
+=============== 
+Content Divider
+===============
+*/
+
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to right,
+    rgb(237, 34, 36),
+    rgb(243, 91, 34),
+    rgb(249, 150, 33),
+    rgb(245, 193, 30),
+    rgb(241, 235, 27) 27%,
+    rgb(241, 235, 27),
+    rgb(241, 235, 27) 33%,
+    rgb(99, 199, 32),
+    rgb(12, 155, 73),
+    rgb(33, 135, 141),
+    rgb(57, 84, 165),
+    rgb(97, 55, 155),
+    rgb(147, 40, 142)
+  );
+}
+
+/*
 =============== 
 About
 ===============
